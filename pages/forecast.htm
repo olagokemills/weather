@@ -1,0 +1,53 @@
+<h2>Forecast for {{city}}</h2>
+
+<hr />
+
+<!--
+Days: <a href="#!/forecast/2" ng-class="{{ bg-primary:days === '2'}}">2</a> ?<a href="#!/forecast/5" ng-class="{{ bg-primary:days === '2'}}">5</a> ? <a href="#!/forecast/7" ng-class="{{ bg-primary:days === '7'}}">7</a>
+
+-->
+<div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+
+						<h3 class="panel-title"> Current:
+
+						{{" " + location + " , " + time}}
+						</h3>
+					</div>
+
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-6">
+
+								<div row>
+									<div class="col-md-12">
+										{{text}}
+									</div>
+								</div>
+
+								
+								<span><img src='{{ icon }}' alt="{{code}}"/></span>
+
+								<span>{{ celcius }} ^C</span>
+
+
+								<span> {{ image.cloud }}</span>
+
+								
+							</div>
+
+							<div class="col-md-6">
+
+
+
+							</div>
+
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
